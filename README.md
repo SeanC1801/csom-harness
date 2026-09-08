@@ -2,6 +2,8 @@
 
 A personal system for planning hackathon projects inside this Obsidian vault, using Claude directly (via Claude Code/Desktop) instead of a metered API. It turns a rough idea into a documented, scored decision, then into a full technical proposal ready to hand to a fresh Claude chat that does the actual building.
 
+> This file exists to get you oriented. Once you understand how the system works, feel free to delete your local copy of it, it's documentation for humans, not something the skills themselves depend on.
+
 ## Philosophy
 
 **Fully human-documented, AI-assisted only.** This system does not build projects autonomously. It automates the *documentation* process, recording decisions into organized files, so nothing is lost and nothing has to be re-explained from scratch. Every meaningful step requires explicit human confirmation before anything is written:
@@ -69,3 +71,12 @@ Result: a mini-harness at `PROJECTS/<slug>/` (`00_CORE/overview.md`, `01_SPECS/s
 **3. Take `PROPOSAL.md` to a fresh Claude chat.** Drag the file in. That chat has no access to this vault, `PROPOSAL.md` is the entire context it will ever get, which is exactly why steps 1 and 2 insist on it being complete and self-contained. Build from there.
 
 A full worked example of all of the above is at `PROJECTS/test-dry-run/`, kept intentionally as a reference for what correct output actually looks like.
+
+## Future ideas
+
+- **A free-tier path for people without Claude Pro.** This system currently assumes a flat-cost Claude subscription, that's the whole point (fixed cost instead of a metered API you can burn through). A collaborator is currently working on a free-tier alternative so people without a Pro subscription can still use CSOM. Not yet merged; tracked here so the intent is visible even before the implementation lands.
+- Session resuming and a lighter-weight CLI, the same ideas CHOM's own README tracks under its own Future ideas section, likely worth mirroring here once the core workflow has more real usage behind it.
+
+## License
+
+MIT, see [LICENSE](LICENSE).
