@@ -2,7 +2,7 @@
 
 A personal system for planning hackathon projects inside this Obsidian vault, using Claude directly (via Claude Code/Desktop) instead of a metered API. It turns a rough idea into a documented, scored decision, then into a full technical proposal ready to hand to a fresh Claude chat that does the actual building.
 
-> This file exists to get you oriented. Once you understand how the system works, feel free to delete your local copy of it, it's documentation for humans, not something the skills themselves depend on.
+> This README file exists to get you oriented. Once you understand how the system works, feel free to delete your local copy of it, it's documentation for humans, not something the skills themselves depend on.
 
 ```
 idea → CSOM → project-doc → PROPOSAL.md → drag into a fresh Claude chat → build
